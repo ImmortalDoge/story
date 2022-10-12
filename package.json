@@ -1,0 +1,13 @@
+{
+  "name": "story",
+  "version": "1.0.0",
+  "description": "A little sci-fi story with a few choices.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run sass && npm run minify",
+    "sass": "sass styles/styles.scss styles/styles.css",
+    "minify": "minify styles/styles.css > styles/styles.min.css"
+  },
+  "author": "immortaldoge",
+  "license": "MIT"
+}

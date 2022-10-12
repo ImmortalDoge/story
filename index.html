@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little story</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="module" src="./scripts/main.mjs"></script>
+    <link rel="stylesheet" href="./styles/styles.min.css" />
+  </head>
+  <body>
+    <div id="navbar" class="overlay">
+      <button class="closeBtn">&times;</button>
+      <div class="overlay-content">
+        <!-- <div class="languageChange">
+          <label class="switch">
+            <span>Русский</span>
+            <input type="checkbox" />
+            <span class="slider round"></span>
+            <span>English</span>
+          </label>
+        </div> -->
+        <div class="colorChange">
+          <label for="colorChange">Цветовая схема</label>
+          <select name="colorChange" id="colorChange">
+            <option value="vintage">Чёрный экран/Зелёный текст</option>
+            <option value="ps">Синий экран/Серый текст</option>
+            <option value="campbell">Чёрный экран/Белый текст</option>
+            <option value="default">Белый экран/Чёрный текст</option>
+          </select>
+        </div>
+        <div>
+          <label for="timeSettings">Показывать время?</label>
+          <input type="checkbox" name="timeSettings" id="timeSettings" />
+        </div>
+        <!-- <div>
+          <label for="pointsSettings">Показывать очки?</label>
+          <input type="checkbox" name="pointsSettings" id="pointsSettings" />
+        </div> -->
+        <div>
+          <label for="autoScrollSettings">Автоскролл текста?</label
+          ><input
+            type="checkbox"
+            name="autoScrollSettings"
+            id="autoScrollSettings"
+            checked
+          />
+        </div>
+        <!-- <div>
+          <input type="button" value="Воспроизвести/Пауза музыки." id="music" />
+        </div> -->
+        <div>
+          <input
+            type="submit"
+            value="Удалить весь текст?"
+            id="removeSettings"
+            class="danger"
+          />
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="text" id="text">
+          <div class="tutorial-content">
+            <p
+              class="tutorial-text"
+              style="text-align: center; font-size: 2.4rem"
+            >
+              <b>Инструкция</b>
+            </p>
+            <p class="tutorial-text">
+              Для появления нового абзаца просто кликайте по области
+              ограниченной серым контуром - это некая иммитация экрана.
+            </p>
+            <p class="tutorial-text">
+              Две цифры снизу - используются только для сюжетных выборов, но вы
+              можете кликать по ним сколько угодно, если желаете.
+            </p>
+            <p class="tutorial-text">
+              Для того, чтобы открыть настройки, дважды кликните справа от
+              "экрана"; либо над "экраном", если сайт открыт на телефоне.
+            </p>
+            <p class="tutorial-text">
+              Цветовая схема - выбор цвета фона и текста.
+            </p>
+            <p class="tutorial-text">
+              Время - это рудимент, который планировалось использовать в
+              повествовании, но не сложилось. Вы можете отображать его для
+              удобства.
+            </p>
+            <p class="tutorial-text">
+              Автоскроллинг - это автоматический фокус на последнем появившемся
+              абзаце, чтобы вам не скролить собственноручно. Да, я потакаю вашей
+              лени...
+            </p>
+
+            <p class="tutorial-text">
+              Красная кнопка -
+              <span style="color: red">удаляет весь текст с "экрана".</span>
+              Вернуть его можно только перезагрузив страницу и начав занаво
+              прокликивать весь уже пройденный текст.
+            </p>
+
+            <p class="tutorial-text">Не нажимайте её бездумно!</p>
+
+            <p class="tutorial-text">
+              Можете удалить данную инструкцию после прочтения, дабы она не
+              мешала, а заодно проверить работоспоосбность кнопки.
+            </p>
+          </div>
+        </div>
+        <div class="choices">
+          <input type="button" value="1" disabled="disabled" />
+          <input type="button" value="2" disabled="disabled" />
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="container">
+        <!-- <div class="points" style="display: none">
+          <p>Количество очков: 0</p>
+        </div> -->
+        <div class="timer" style="display: none">
+          <p>Текущее время:</p>
+          <div id="time">
+            <p id="hour"></p>
+            <span>:</span>
+            <p id="minute"></p>
+            <span>:</span>
+            <p id="second"></p>
+            <p id="period"></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- <footer>
+      <div class="container">
+        <div class="links">
+          <a href="">GitHub</a>
+          <a href="">VK</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="creator">
+          <p class="name"></p>
+          <p class="desc"></p>
+        </div>
+      </div>
+    </footer> -->
+  </body>
+</html>
