@@ -1,2 +1,7 @@
-# story
-This is a litle sci-fi story with some choices
+# Little story
+Это небольшая история с научно-фантастическим уклоном и возможностью выбора развития сюжета.
+
+На данный момент готов только пролог. 
+Планируется две главы и минимум четыре сюжетных вбора, кардинально меняющих сюжет.
+
+## ***For now only Russian text, but in the future English will be added***
