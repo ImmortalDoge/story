@@ -1,6 +1,7 @@
 const settings = () => {
-  $("select").on("click", () => {
-    $("select").val((i, value) => {
+  $("select#colorChange").on("change", () => {
+    $("select#colorChange").val((i, value) => {
+      console.log(value)
       switch (value) {
         case "vintage":
           $(".text").css({ "background-color": "#0C0C0C", color: "#00FE00" });

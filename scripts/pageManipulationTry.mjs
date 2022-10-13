@@ -19,11 +19,9 @@ const chapters = [
 ];
 
 const toggleSettings = () => {
-  $(".container")
-    .eq(1)
-    .on("dblclick", () => {
-      $("#navbar").css("width", "100%");
-    });
+  $(".settings").on("click", () => {
+    $("#navbar").css("width", "100%");
+  });
   $(".closeBtn").on("click", () => {
     $("#navbar").css("width", "0%");
   });
