@@ -174,8 +174,8 @@ input[type=button] {
     margin-top: 75px;
     height: 85%;
   }
-  .text p + .overlay-content {
-    font-size: 1.8rem;
+  .text p, .overlay-content :is(.danger, div) {
+    font-size: 2rem;
   }
 }
 
