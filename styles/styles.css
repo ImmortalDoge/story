@@ -82,8 +82,9 @@ aside .container {
 }
 
 .settings {
-  margin: auto;
-  margin-block-start: 15px;
+  text-align: end;
+  margin-block-start: 5px;
+  margin-inline-end: 15px;
   cursor: pointer;
 }
 
@@ -176,6 +177,11 @@ input[type=button] {
   }
   .text p, .overlay-content :is(.danger, div) {
     font-size: 2rem;
+  }
+  .settings {
+    position: fixed;
+    top: 5px;
+    right: 5px;
   }
 }
 
