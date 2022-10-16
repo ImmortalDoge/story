@@ -62,17 +62,22 @@ const addChoices = () => {
 };
 
 const theEnd = () => {
-  $(".text p").remove();
-  $(".text")
-    .text("That's all Folks!")
-    .css({ "font-size": "48px", "text-align": "center" });
+  $(".text").append(`<p>${chapters[chapter][paragraph]}</p>`);
+  autoScrolling();
+  $(".text p")
+    .last()
+    .css({ "font-size": "24px", "text-align": "center", color: "#818181" });
+  $(".text").on("click", () => {
+    $(".text p").remove();
+    $(".text")
+      .text("That's all Folks!")
+      .css({ "font-size": "48px", "text-align": "center" });
+  });
 };
 
 const appendText = () => {
   $(".text").click(() => {
-    // console.log(paragraph);
-    console.log(chapters[chapter].length);
-    if (paragraph === chapters[chapter].length) {
+    if (paragraph === chapters[chapter].length - 1) {
       return theEnd();
     } else if (Object.keys(chapters[chapter][paragraph]).length === 2) {
       return addChoices();
