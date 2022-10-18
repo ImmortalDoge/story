@@ -1,7 +1,7 @@
-import { currentTime } from "./time.mjs";
-import { settings } from "./settings.mjs";
+import { currentTime } from "./time.js";
+import { settings } from "./settings.js";
 // import { getPoints } from "./points.mjs";
-import { toggleSettings, appendText } from "./pageManipulationTry.mjs";
+import { toggleSettings, appendText } from "./pageManipulationTry.js";
 
 $(function () {
   // getPoints();

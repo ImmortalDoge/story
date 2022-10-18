@@ -5,7 +5,7 @@ import {
   // firstChoice2,
   // secondChoice1,
   // secondChoice2,
-} from "./plotTry.mjs";
+} from "./plotTry.js";
 
 let paragraph = 0;
 let chapter = 0;
